@@ -20,7 +20,7 @@ const techImgArr = [
   "/img/tech/mongo.png",
   "/img/tech/nodejs.png",
   "/img/tech/npm.png",
-  "/img/tech/pugface.png",
+  "/img/tech/pugFace.png",
   "/img/tech/sass.png"
 ]
 
