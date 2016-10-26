@@ -2,7 +2,7 @@
 
 A portfolio site, built from the ground up with out any frameworks.
 
-Uses [featherlight](https://noelboss.github.io/featherlight/) for the light boxes used in the 'work section' and jquery.
+Uses [featherlight.js](https://noelboss.github.io/featherlight/) for the light boxes used in the 'work section' and jquery.
 
 ## Screenshots
 ![alt text](/img/screenshots/splash.png 'Splash page')
