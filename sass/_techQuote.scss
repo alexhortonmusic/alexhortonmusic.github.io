@@ -1,0 +1,84 @@
+// tech and quote
+.lastSection {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	.techAndQuote {
+		display: flex;
+		flex-direction:row;
+		justify-content: space-around;
+
+		.tech { /* come back to this style */
+			width: 75%;
+
+			h1 {
+				text-align: center;
+				margin-top: 40px;
+				margin-bottom: 25px;
+			}
+
+			.techBox {
+
+				.row {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-around;
+
+					.techImgBox {
+						width: 15%;
+						margin-bottom: 50px;
+
+						.techImg {
+							display: block;
+							max-height: 60px;
+							max-width: 90px;
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+
+
+		.sondheim {
+			background-color: $primary;
+
+			.quote {
+				font-family: 'Patua One', cursive;
+				border-top: 3px double $neutral-1;
+				border-bottom: 3px double $neutral-1;
+				width: 90%;
+				margin: 140px auto 0;
+				text-align: center;
+
+				h1 {
+					padding: 10px 0;
+					position: relative;
+					width: 80%;
+					text-align: center;
+					margin: 0 auto;
+					font-size: 2.2em;
+					color: $neutral-1;
+					font-style: italic;
+					font-weight: lighter;
+				}
+
+				h1:before {
+					content: "\201C";
+					font-size: 200%;
+					display: block;
+					position: absolute;
+					top: -5px;
+					left: -5px;
+				}
+
+				p {
+					margin-bottom: 10px;
+					color: $neutral-1;
+					font-family: 'Raleway', serif;
+					font-weight: lighter;
+				}
+			}
+		}
+	}
+}

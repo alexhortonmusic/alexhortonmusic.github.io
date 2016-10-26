@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexhortonmusic/personal-site.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexhortonmusic/personal-site/issues"
+  },
+  "homepage": "https://github.com/alexhortonmusic/personal-site#readme",
+  "devDependencies": {
+    "bower": "^1.7.9"
+  }
+}

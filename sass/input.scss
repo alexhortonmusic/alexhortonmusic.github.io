@@ -1,0 +1,94 @@
+$primary: #3c6991;
+$secondary: rgba(140, 179, 105, 1);
+$neutral-1: rgba(234, 244, 244, 1);
+$neutral-2: rgba(204, 227, 222, 1);
+$neutral-3: rgba(164, 195, 178, 1);
+
+@mixin transition($transition-property, $transition-time, $method) {
+	transition: $transition-property $transition-time $method;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:before, &:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* --- imports ---*/
+@import 'splash';
+@import 'nav';
+@import 'projects';
+@import 'about';
+@import 'techQuote';
+
+// work harder section
+.workHarder {
+	background-image: url('../img/work-harder-skinny.jpeg');
+	height: 300px;
+	background-size: cover;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+footer {
+	height: 180px;
+	background-color: #e3e0db;
+
+	.icons {
+		margin: 0 auto;
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		a {
+			margin-top: 60px;
+		}
+
+		a:link,
+		a:visited {
+			color: $primary;
+
+			.footerIcon {
+				font-size: 3rem;
+				transition: 0.2s;
+			}
+		}
+
+		a:hover,
+		a:active {
+
+			.gh {
+				color: black;
+				transition: 0.2s;
+			}
+
+			.linked {
+				color: #0077b5;
+				transition: 0.2s;
+			}
+
+			.email {
+				color: $secondary;
+				transition: 0.2s;
+			}
+		}
+	}
+
+	p {
+		text-align: center;
+		margin-top: 15px;
+	}
+}
