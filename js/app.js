@@ -80,7 +80,17 @@ const Freddit = {
   github: 'https://github.com/alexhortonmusic/fake-reddit'
 }
 
-projectsArr.push(Tradesies, SpaceRace, Freddit)
+const Occam = {
+  name: 'Occam',
+  className: 'occam',
+  mainImg: '../img/Splash.png',
+  info: 'Kanban tool productivity web application for project organization. Allows users to create an account, create organization boards for different projects, and create different lists for each project.',
+  img2: '../img/Board.png',
+  url: 'https://occam-planner.herokuapp.com/',
+  github: 'https://github.com/alexhortonmusic/occam'
+}
+
+projectsArr.push(Tradesies, SpaceRace, Freddit, Occam)
 
 const projectHTMLArr = []
 const projectModalArr = []
