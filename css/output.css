@@ -15,7 +15,7 @@ body {
 
 /* --- imports ---*/
 .heroTextBox {
-  height: 800px;
+  height: 750px;
   background-image: url("../img/hammer.jpg");
   background-position: top;
   background-size: cover;
@@ -29,9 +29,11 @@ body {
       text-align: center;
       font-size: 2.3em;
       margin-top: 40px; }
+    .heroTextBox .heroTextWrap .tag2 {
+      margin-top: 10px; }
     .heroTextBox .heroTextWrap .headShotBox {
-      margin-top: 50px;
-      margin-bottom: 30px;
+      margin-top: 30px;
+      margin-bottom: 20px;
       text-align: center; }
       .heroTextBox .heroTextWrap .headShotBox img {
         width: 250px;
@@ -59,6 +61,19 @@ body {
       letter-spacing: 4px;
       transition: 0.2s; }
 
+@media (max-width: 600px) {
+  .heroTextBox {
+    height: 700px; }
+    .heroTextBox .heroTextWrap {
+      width: 85%; }
+      .heroTextBox .heroTextWrap .tagline {
+        font-size: 1.8rem; }
+      .heroTextBox .heroTextWrap .tag2 {
+        margin-top: 10px; }
+      .heroTextBox .heroTextWrap .headShotBox {
+        margin-top: 40px; }
+      .heroTextBox .heroTextWrap .talkAboutIt {
+        width: auto; } }
 nav {
   height: 50px;
   width: 100%;
@@ -87,6 +102,12 @@ nav {
       letter-spacing: 2px;
       transition: 0.2s; }
 
+@media (max-width: 600px) {
+  nav div {
+    margin-right: 0; }
+    nav div a:link p,
+    nav div a:hover p {
+      font-size: 1rem; } }
 .projects {
   background-color: #cce3de;
   background-size: cover;
