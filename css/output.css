@@ -18,8 +18,7 @@ body {
   height: 750px;
   background-image: url("../img/hammer.jpg");
   background-position: top;
-  background-size: cover;
-  border-bottom: 2px solid black; }
+  background-size: cover; }
   .heroTextBox .heroTextWrap {
     margin: 40px auto;
     width: 40%; }
@@ -50,7 +49,6 @@ body {
       font-size: 1.7em;
       font-weight: lighter;
       display: block;
-      width: 370px;
       margin: 10px auto;
       text-align: center;
       letter-spacing: 0;
@@ -269,17 +267,44 @@ nav {
           text-align: center;
           font-size: 1.5rem;
           font-weight: lighter;
-          padding-bottom: 20px;
-          border-bottom: 1px solid #3c6991; }
+          padding-bottom: 10px;
+          color: #8cb369; }
         .about .whatIDo .aboutCols .aboutCol p {
-          text-align: center;
-          line-height: 20px;
-          margin-top: 30px;
-          font-size: 1.1rem; }
+          text-align: justify;
+          line-height: 25px;
+          margin: 20px auto 0;
+          font-size: 1.1rem;
+          width: 90%; }
         .about .whatIDo .aboutCols .aboutCol #pingPong {
           margin-top: 50px;
-          font-size: 3rem; }
+          font-size: 3rem;
+          text-align: center; }
 
+@media (max-width: 600px) {
+  .about .whoIAm .aboutMe {
+    flex-direction: column;
+    margin-top: 20px; }
+    .about .whoIAm .aboutMe .aboutImg {
+      margin: 0 auto; }
+      .about .whoIAm .aboutMe .aboutImg img {
+        height: 180px; }
+    .about .whoIAm .aboutMe .tagInfo {
+      width: 80%;
+      margin: 20px auto;
+      text-align: left; }
+      .about .whoIAm .aboutMe .tagInfo span {
+        display: block;
+        text-align: center; }
+  .about .whatIDo {
+    margin-top: 30px; }
+    .about .whatIDo h1 {
+      margin-bottom: 35px; }
+    .about .whatIDo .aboutCols {
+      flex-direction: column; }
+      .about .whatIDo .aboutCols .aboutCol {
+        width: 80%; }
+        .about .whatIDo .aboutCols .aboutCol p {
+          margin-bottom: 30px; } }
 .lastSection {
   border-top: 2px solid black;
   border-bottom: 2px solid black; }

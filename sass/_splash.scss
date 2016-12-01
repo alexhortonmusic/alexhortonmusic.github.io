@@ -3,7 +3,6 @@
 	background-image: url('../img/hammer.jpg');
 	background-position: top;
 	background-size: cover;
-	border-bottom: 2px solid black;
 
 	.heroTextWrap {
 		margin: 40px auto;
@@ -43,7 +42,6 @@
 			font-size: 1.7em;
 			font-weight: lighter;
 			display: block;
-			width: 370px;
 			margin: 10px auto;
 			text-align: center;
 			letter-spacing: 0;
@@ -77,6 +75,11 @@
 
 			.headShotBox {
 				margin-top: 40px;
+
+				img {
+					// box-shadow: none;
+					// border: 2px solid black;
+				}
 			}
 
 			.talkAboutIt {

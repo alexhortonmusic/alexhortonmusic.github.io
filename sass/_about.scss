@@ -1,11 +1,7 @@
 // about
 .about {
-	// height: 800px;
-	// width: 90%;
-	// margin: 20px auto;
 	display: flex;
 	flex-direction: column;
-	// justify-content: flex-end;
 	color: $primary;
 
 	.whoIAm {
@@ -76,23 +72,77 @@
 					text-align: center;
 					font-size: 1.5rem;
 					font-weight: lighter;
-					padding-bottom: 20px;
-					border-bottom: 1px solid $primary;
+					padding-bottom: 10px;
+					color: $secondary;
+					// border-bottom: 1px solid $primary;
 				}
 
 				p {
-					text-align: center;
-					line-height: 20px;
-					margin-top: 30px;
+					text-align: justify;
+					line-height: 25px;
+					margin: 20px auto 0;
 					font-size: 1.1rem;
+					width: 90%;
 				}
 
 				#pingPong {
 					margin-top: 50px;
 					font-size: 3rem;
+					text-align: center;
 				}
 			}
 		}
 	}
+}
 
+@media (max-width: 600px) {
+	.about {
+
+		.whoIAm {
+
+			.aboutMe {
+				flex-direction: column;
+				margin-top: 20px;
+
+				.aboutImg {
+					margin: 0 auto;
+
+					img {
+						height: 180px;
+					}
+				}
+
+				.tagInfo {
+					width: 80%;
+					margin: 20px auto;
+					text-align: left;
+
+					span {
+						display: block;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		.whatIDo {
+			margin-top: 30px;
+
+			h1 {
+				margin-bottom: 35px;
+			}
+
+			.aboutCols {
+				flex-direction: column;
+
+				.aboutCol {
+					width: 80%;
+
+					p {
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+	}
 }
