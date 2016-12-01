@@ -42,6 +42,12 @@ body {
 	border-bottom: 2px solid black;
 }
 
+@media (max-width: 600px) {
+	.workHarder {
+		display: none;
+	}
+}
+
 footer {
 	height: 180px;
 	background-color: #e3e0db;

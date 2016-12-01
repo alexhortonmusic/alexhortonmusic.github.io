@@ -1,9 +1,8 @@
 .heroTextBox {
-	height: 800px;
+	height: 750px;
 	background-image: url('../img/hammer.jpg');
 	background-position: top;
 	background-size: cover;
-	border-bottom: 2px solid black;
 
 	.heroTextWrap {
 		margin: 40px auto;
@@ -16,9 +15,13 @@
 			margin-top: 40px;
 		}
 
+		.tag2 {
+			margin-top: 10px;
+		}
+
 		.headShotBox {
-		  margin-top: 50px;
-		  margin-bottom: 30px;
+		  margin-top: 30px;
+		  margin-bottom: 20px;
 		  text-align: center;
 
 		  img {
@@ -39,7 +42,6 @@
 			font-size: 1.7em;
 			font-weight: lighter;
 			display: block;
-			width: 370px;
 			margin: 10px auto;
 			text-align: center;
 			letter-spacing: 0;
@@ -52,6 +54,37 @@
 			// text-shadow: 2px 2px 8px $primary;
 			letter-spacing: 4px;
 			transition: 0.2s;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.heroTextBox {
+		height: 700px;
+
+		.heroTextWrap {
+			width: 85%;
+
+			.tagline {
+				font-size: 1.8rem;
+			}
+
+			.tag2 {
+				margin-top: 10px;
+			}
+
+			.headShotBox {
+				margin-top: 40px;
+
+				img {
+					// box-shadow: none;
+					// border: 2px solid black;
+				}
+			}
+
+			.talkAboutIt {
+				width: auto;
+			}
 		}
 	}
 }

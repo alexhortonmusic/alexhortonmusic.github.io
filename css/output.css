@@ -15,11 +15,10 @@ body {
 
 /* --- imports ---*/
 .heroTextBox {
-  height: 800px;
+  height: 750px;
   background-image: url("../img/hammer.jpg");
   background-position: top;
-  background-size: cover;
-  border-bottom: 2px solid black; }
+  background-size: cover; }
   .heroTextBox .heroTextWrap {
     margin: 40px auto;
     width: 40%; }
@@ -29,9 +28,11 @@ body {
       text-align: center;
       font-size: 2.3em;
       margin-top: 40px; }
+    .heroTextBox .heroTextWrap .tag2 {
+      margin-top: 10px; }
     .heroTextBox .heroTextWrap .headShotBox {
-      margin-top: 50px;
-      margin-bottom: 30px;
+      margin-top: 30px;
+      margin-bottom: 20px;
       text-align: center; }
       .heroTextBox .heroTextWrap .headShotBox img {
         width: 250px;
@@ -48,7 +49,6 @@ body {
       font-size: 1.7em;
       font-weight: lighter;
       display: block;
-      width: 370px;
       margin: 10px auto;
       text-align: center;
       letter-spacing: 0;
@@ -59,6 +59,19 @@ body {
       letter-spacing: 4px;
       transition: 0.2s; }
 
+@media (max-width: 600px) {
+  .heroTextBox {
+    height: 700px; }
+    .heroTextBox .heroTextWrap {
+      width: 85%; }
+      .heroTextBox .heroTextWrap .tagline {
+        font-size: 1.8rem; }
+      .heroTextBox .heroTextWrap .tag2 {
+        margin-top: 10px; }
+      .heroTextBox .heroTextWrap .headShotBox {
+        margin-top: 40px; }
+      .heroTextBox .heroTextWrap .talkAboutIt {
+        width: auto; } }
 nav {
   height: 50px;
   width: 100%;
@@ -87,10 +100,15 @@ nav {
       letter-spacing: 2px;
       transition: 0.2s; }
 
+@media (max-width: 600px) {
+  nav div {
+    margin-right: 0; }
+    nav div a:link p,
+    nav div a:hover p {
+      font-size: 1rem; } }
 .projects {
   background-color: #cce3de;
-  background-size: cover;
-  max-height: 850px; }
+  background-size: cover; }
   .projects h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -99,7 +117,7 @@ nav {
     font-size: 2.3rem; }
 
 .gallery {
-  padding: 40px 0 300px;
+  padding: 40px 0;
   position: relative;
   overflow: hidden; }
   .gallery .rows {
@@ -197,6 +215,17 @@ nav {
   width: 500px;
   border: 1px solid #3c6991; }
 
+@media (max-width: 600px) {
+  .gallery .galleryUl .modal div {
+    width: 70%;
+    margin: 0 auto; }
+
+  .featherlight-content {
+    max-height: 400px;
+    max-width: 80%; }
+
+  .modalPop img {
+    width: 90%; } }
 .about {
   display: flex;
   flex-direction: column;
@@ -231,7 +260,7 @@ nav {
         font-size: 1.5rem;
         font-style: italic; }
   .about .whatIDo {
-    margin-top: 120px;
+    margin-top: 60px;
     margin-bottom: 30px; }
     .about .whatIDo h1 {
       text-align: center;
@@ -248,76 +277,100 @@ nav {
           text-align: center;
           font-size: 1.5rem;
           font-weight: lighter;
-          padding-bottom: 20px;
-          border-bottom: 1px solid #3c6991; }
+          padding-bottom: 10px;
+          color: #8cb369; }
         .about .whatIDo .aboutCols .aboutCol p {
-          text-align: center;
-          line-height: 20px;
-          margin-top: 30px;
-          font-size: 1.1rem; }
+          text-align: justify;
+          line-height: 25px;
+          margin: 20px auto 0;
+          font-size: 1.1rem;
+          width: 90%; }
         .about .whatIDo .aboutCols .aboutCol #pingPong {
           margin-top: 50px;
-          font-size: 3rem; }
+          font-size: 3rem;
+          text-align: center; }
 
-.lastSection {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black; }
-  .lastSection .techAndQuote {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    .lastSection .techAndQuote .tech {
-      /* come back to this style */
-      width: 75%; }
-      .lastSection .techAndQuote .tech h1 {
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 25px; }
-      .lastSection .techAndQuote .tech .techBox .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around; }
-        .lastSection .techAndQuote .tech .techBox .row .techImgBox {
-          width: 15%;
-          margin-bottom: 50px; }
-          .lastSection .techAndQuote .tech .techBox .row .techImgBox .techImg {
-            display: block;
-            max-height: 60px;
-            max-width: 90px;
-            margin: 0 auto; }
-    .lastSection .techAndQuote .sondheim {
-      background-color: #3c6991; }
-      .lastSection .techAndQuote .sondheim .quote {
-        font-family: 'Patua One', cursive;
-        border-top: 3px double #eaf4f4;
-        border-bottom: 3px double #eaf4f4;
-        width: 90%;
-        margin: 140px auto 0;
+@media (max-width: 600px) {
+  .about .whoIAm .aboutMe {
+    flex-direction: column;
+    margin-top: 20px; }
+    .about .whoIAm .aboutMe .aboutImg {
+      margin: 0 auto; }
+      .about .whoIAm .aboutMe .aboutImg img {
+        height: 180px; }
+    .about .whoIAm .aboutMe .tagInfo {
+      width: 80%;
+      margin: 20px auto;
+      text-align: left; }
+      .about .whoIAm .aboutMe .tagInfo span {
+        display: block;
         text-align: center; }
-        .lastSection .techAndQuote .sondheim .quote h1 {
-          padding: 10px 0;
-          position: relative;
-          width: 80%;
-          text-align: center;
-          margin: 0 auto;
-          font-size: 2.2em;
-          color: #eaf4f4;
-          font-style: italic;
-          font-weight: lighter; }
-        .lastSection .techAndQuote .sondheim .quote h1:before {
-          content: "\201C";
-          font-size: 200%;
+  .about .whatIDo {
+    margin-top: 30px; }
+    .about .whatIDo h1 {
+      margin-bottom: 35px; }
+    .about .whatIDo .aboutCols {
+      flex-direction: column; }
+      .about .whatIDo .aboutCols .aboutCol {
+        width: 80%; }
+        .about .whatIDo .aboutCols .aboutCol p {
+          margin-bottom: 30px; } }
+.lastSection .techAndQuote {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .lastSection .techAndQuote .tech {
+    /* come back to this style */
+    width: 75%; }
+    .lastSection .techAndQuote .tech h1 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 25px; }
+    .lastSection .techAndQuote .tech .techBox .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .lastSection .techAndQuote .tech .techBox .row .techImgBox {
+        width: 15%;
+        margin-bottom: 50px; }
+        .lastSection .techAndQuote .tech .techBox .row .techImgBox .techImg {
           display: block;
-          position: absolute;
-          top: -5px;
-          left: -5px; }
-        .lastSection .techAndQuote .sondheim .quote p {
-          margin-bottom: 10px;
-          color: #eaf4f4;
-          font-family: 'Raleway', serif;
-          font-weight: lighter; }
+          max-height: 60px;
+          max-width: 90px;
+          margin: 0 auto; }
+  .lastSection .techAndQuote .sondheim {
+    background-color: #3c6991; }
+    .lastSection .techAndQuote .sondheim .quote {
+      font-family: 'Patua One', cursive;
+      border-top: 3px double #eaf4f4;
+      border-bottom: 3px double #eaf4f4;
+      width: 90%;
+      margin: 140px auto 0;
+      text-align: center; }
+      .lastSection .techAndQuote .sondheim .quote h1 {
+        padding: 10px 0;
+        position: relative;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2.2em;
+        color: #eaf4f4;
+        font-style: italic;
+        font-weight: lighter; }
+      .lastSection .techAndQuote .sondheim .quote h1:before {
+        content: "\201C";
+        font-size: 200%;
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: -5px; }
+      .lastSection .techAndQuote .sondheim .quote p {
+        margin-bottom: 10px;
+        color: #eaf4f4;
+        font-family: 'Raleway', serif;
+        font-weight: lighter; }
 
 .workHarder {
   background-image: url("../img/work-harder-skinny.jpeg");
@@ -326,6 +379,9 @@ nav {
   border-top: 2px solid black;
   border-bottom: 2px solid black; }
 
+@media (max-width: 600px) {
+  .workHarder {
+    display: none; } }
 footer {
   height: 180px;
   background-color: #e3e0db; }
