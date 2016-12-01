@@ -2,9 +2,6 @@
 .projects {
 	background-color: $neutral-2;
 	background-size: cover;
-	// border-top: 2px solid black;
-	max-height: 850px;
-	// background: $neutral-3;
 
   h1 {
     text-align: center;
@@ -16,7 +13,7 @@
 }
 
 .gallery {
-	padding: 40px 0 300px;
+	padding: 40px 0;
 	position: relative;
 	overflow: hidden;
 
@@ -39,7 +36,6 @@
 	}
 
 	.galleryUl {
-		// padding-top: 50px;
 		position: relative;
     list-style-type: none;
     display: flex;
@@ -51,7 +47,6 @@
 			width: 40%;
       min-width: 450px;
 			position: relative;
-
 
       h2 {
         text-align: center;
@@ -146,11 +141,42 @@
 		}
 	}
 
-
 	img {
 		display: block;
 		margin: 15px 20px;
 		width: 500px;
 		border: 1px solid $primary;
+	}
+}
+
+
+@media (max-width: 600px) {
+	.gallery {
+
+
+		.galleryUl {
+
+
+			.modal {
+
+				div {
+					width: 70%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+
+	.featherlight-content {
+		max-height: 400px;
+		max-width: 80%;
+	}
+
+	.modalPop {
+
+		img {
+			width: 90%;
+		}
 	}
 }
