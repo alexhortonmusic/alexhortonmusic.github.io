@@ -297,6 +297,7 @@ nav {
     flex-direction: column;
     margin-top: 20px; }
     .about .whoIAm .aboutMe .aboutImg {
+      width: 180px;
       margin: 0 auto; }
       .about .whoIAm .aboutMe .aboutImg img {
         height: 180px; }
