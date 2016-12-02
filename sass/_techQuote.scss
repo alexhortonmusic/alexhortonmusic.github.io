@@ -3,9 +3,8 @@
 
 	.techAndQuote {
 		display: flex;
-		flex-direction:row;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		flex-direction: row;
+		// justify-content: space-around;
 
 		.tech { /* come back to this style */
 			width: 75%;

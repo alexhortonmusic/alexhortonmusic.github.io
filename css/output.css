@@ -216,6 +216,8 @@ nav {
   border: 1px solid #3c6991; }
 
 @media (max-width: 600px) {
+  .gallery .galleryUl .modal h2 {
+    font-size: 1.8rem; }
   .gallery .galleryUl .modal div {
     width: 70%;
     margin: 0 auto; }
@@ -317,9 +319,7 @@ nav {
           margin-bottom: 30px; } }
 .lastSection .techAndQuote {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  flex-direction: row; }
   .lastSection .techAndQuote .tech {
     /* come back to this style */
     width: 75%; }
