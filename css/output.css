@@ -216,6 +216,8 @@ nav {
   border: 1px solid #3c6991; }
 
 @media (max-width: 600px) {
+  .gallery .galleryUl .modal h2 {
+    font-size: 1.8rem; }
   .gallery .galleryUl .modal div {
     width: 70%;
     margin: 0 auto; }
@@ -317,16 +319,17 @@ nav {
           margin-bottom: 30px; } }
 .lastSection .techAndQuote {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  flex-direction: row; }
   .lastSection .techAndQuote .tech {
     /* come back to this style */
     width: 75%; }
     .lastSection .techAndQuote .tech h1 {
       text-align: center;
       margin-top: 40px;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      color: #3c6991;
+      font-weight: lighter;
+      font-size: 2.3rem; }
     .lastSection .techAndQuote .tech .techBox .row {
       display: flex;
       flex-direction: row;
@@ -334,7 +337,7 @@ nav {
       justify-content: space-around; }
       .lastSection .techAndQuote .tech .techBox .row .techImgBox {
         width: 15%;
-        margin-bottom: 50px; }
+        margin: 0 10px 50px; }
         .lastSection .techAndQuote .tech .techBox .row .techImgBox .techImg {
           display: block;
           max-height: 60px;
@@ -372,6 +375,18 @@ nav {
         font-family: 'Raleway', serif;
         font-weight: lighter; }
 
+@media (max-width: 600px) {
+  .lastSection .techAndQuote {
+    flex-direction: column; }
+    .lastSection .techAndQuote .tech {
+      width: 90%;
+      margin: 0 auto; }
+      .lastSection .techAndQuote .tech h1 {
+        width: 100%; }
+      .lastSection .techAndQuote .tech .techBox .row .techImgBox {
+        width: 20%; }
+    .lastSection .techAndQuote .sondheim .quote {
+      margin: 20px auto; } }
 .workHarder {
   background-image: url("../img/work-harder-skinny.jpeg");
   height: 300px;
