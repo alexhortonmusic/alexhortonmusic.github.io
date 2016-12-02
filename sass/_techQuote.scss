@@ -4,7 +4,6 @@
 	.techAndQuote {
 		display: flex;
 		flex-direction: row;
-		// justify-content: space-around;
 
 		.tech { /* come back to this style */
 			width: 75%;
@@ -13,6 +12,9 @@
 				text-align: center;
 				margin-top: 40px;
 				margin-bottom: 25px;
+				color: $primary;
+				font-weight: lighter;
+				font-size: 2.3rem;
 			}
 
 			.techBox {
@@ -25,7 +27,7 @@
 
 					.techImgBox {
 						width: 15%;
-						margin-bottom: 50px;
+						margin: 0 10px 50px;
 
 						.techImg {
 							display: block;
@@ -76,6 +78,46 @@
 					color: $neutral-1;
 					font-family: 'Raleway', serif;
 					font-weight: lighter;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.lastSection {
+
+		.techAndQuote {
+			flex-direction: column;
+
+			.tech {
+				width: 90%;
+				margin: 0 auto;
+
+				h1 {
+					width: 100%;
+				}
+
+				.techBox {
+
+					.row {
+
+						.techImgBox {
+							width: 20%;
+
+							.techImg {
+
+							}
+						}
+					}
+				}
+
+			}
+
+			.sondheim {
+
+				.quote {
+					margin: 20px auto;
 				}
 			}
 		}
