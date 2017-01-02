@@ -46,7 +46,7 @@ const projectsArr = []
 const Tradesies = {
   name: 'Tradesies',
   className: 'tradesies',
-  mainImg: '../img/tradesies-home.png',
+  mainImg: '../img/tradesies-mock.png',
   info: 'A gear-trading application for the restless musician.',
   img2: '../img/tradesies-community.png',
   url: '#',
@@ -56,7 +56,7 @@ const Tradesies = {
 const SpaceRace = {
   name: 'Space Race',
   className: 'spaceRace',
-  mainImg: '../img/space-game.png',
+  mainImg: '../img/space-mock.png',
   info: 'Space Race is a live-action multiplayer game, supporting multiple users and rooms. Built using technologies such as Node.js, Express, Socket.io, and Pug, Space Race is a game where 2-4 players race their ships to the moon.',
   img2: '../img/space-home.png',
   url: 'https://space-race-.herokuapp.com/',
@@ -66,7 +66,7 @@ const SpaceRace = {
 const Freddit = {
   name: 'Freddit',
   className: 'freddit',
-  mainImg: '../img/freddit-home.png',
+  mainImg: '../img/freddit-mock.png',
   info: 'Freddit is a social news aggregator and rating site. In other words, a clone of the basic features of Reddit.',
   img2: '../img/freddit-comment.png',
   url: 'https://ancient-hamlet-94779.herokuapp.com/',
@@ -76,7 +76,7 @@ const Freddit = {
 const Occam = {
   name: 'Occam',
   className: 'occam',
-  mainImg: '../img/Splash.png',
+  mainImg: '../img/occam-mock.png',
   info: 'Kanban tool productivity web application for project organization. Allows users to create an account, create organization boards for different projects, and create different lists for each project.',
   img2: '../img/Board.png',
   url: 'https://occam-planner.herokuapp.com/',
@@ -93,7 +93,7 @@ projectsArr.forEach((project, index) => {
     <li class='modal ${project.className}'>
       <h2>${project.name}</h2>
       <div>
-        <img src="${project.mainImg}" alt="${project.name} screenshot">
+        <img class='singleProject' src="${project.mainImg}" alt="${project.name} screenshot">
       </div>
     </li>
   `

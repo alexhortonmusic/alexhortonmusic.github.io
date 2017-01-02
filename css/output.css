@@ -45,4 +45,13 @@ body {
       margin: 15px 0 0;
       text-align: center; }
 
+.about {
+  display: flex;
+  flex-direction: row; }
+  .about .aboutText ul {
+    list-style: none; }
+
+.modal div .singleProject {
+  height: 250px; }
+
 /*# sourceMappingURL=output.css.map */
