@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200; }
 
 /* imports */
 .landing {
@@ -33,11 +34,11 @@ body {
   .landing div {
     /* passionate about... */
     height: 90%;
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 25%; }
+    margin: 0 auto; }
     .landing div p {
       color: white;
       font-weight: 200;
@@ -51,7 +52,42 @@ body {
   .about .aboutText ul {
     list-style: none; }
 
-.modal div .singleProject {
-  height: 250px; }
+.work .projects .galleryUl {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .work .projects .galleryUl .modal {
+    width: 40%;
+    min-width: 550px; }
+    .work .projects .galleryUl .modal h2, .work .projects .galleryUl .modal p {
+      text-align: center; }
+    .work .projects .galleryUl .modal h2 {
+      font-size: 2rem; }
+    .work .projects .galleryUl .modal p {
+      margin-bottom: 0; }
+    .work .projects .galleryUl .modal div .singleProject {
+      max-width: 100%;
+      min-width: 550px; }
+
+.tech .techStack {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .tech .techStack .techImgBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    min-width: 160px;
+    margin-bottom: 25px; }
+    .tech .techStack .techImgBox .techImg {
+      align-self: center;
+      max-width: 100px;
+      max-height: 150px; }
 
 /*# sourceMappingURL=output.css.map */

@@ -4,6 +4,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
 }
 
 
@@ -11,3 +12,4 @@ body {
 @import 'landing';
 @import 'about';
 @import 'work';
+@import 'tech';

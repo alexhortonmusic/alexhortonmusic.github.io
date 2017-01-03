@@ -2,20 +2,37 @@
 	.projects {
 
 		.galleryUl {
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
 
+			.modal {
+				width: 40%;
+				min-width: 550px;
+
+				h2, p {
+					text-align: center;
+				}
+
+				h2 {
+					font-size: 2rem;
+				}
+
+				p {
+					margin-bottom: 0;
+				}
+
+				div {
+
+					.singleProject {
+						max-width: 100%;
+						min-width: 550px;
+					}
+				}
+			}
 		}
 	}
 }
 
-.modal {
-	h2 {
-
-	}
-
-	div {
-
-		.singleProject {
-			height: 250px;
-		}
-	}
-}
