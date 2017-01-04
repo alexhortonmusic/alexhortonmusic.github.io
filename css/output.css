@@ -45,12 +45,33 @@ body {
       font-size: 3rem;
       margin: 15px 0 0;
       text-align: center; }
+      .landing div p a {
+        text-decoration: none;
+        color: white; }
 
 .about {
   display: flex;
-  flex-direction: row; }
-  .about .aboutText ul {
-    list-style: none; }
+  flex-direction: column;
+  justify-content: center;
+  height: 700px; }
+  .about .aboutBox {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .about .aboutBox .aboutImg {
+      margin-top: 60px; }
+      .about .aboutBox .aboutImg img {
+        height: 30%;
+        border-radius: 50%; }
+    .about .aboutBox .aboutText p {
+      font-size: 3rem; }
+    .about .aboutBox .aboutText ul {
+      list-style: none;
+      padding-left: 60px; }
+      .about .aboutBox .aboutText ul li {
+        margin-bottom: 15px; }
 
 .work .projects .galleryUl {
   list-style: none;
@@ -60,16 +81,21 @@ body {
   justify-content: space-around; }
   .work .projects .galleryUl .modal {
     width: 40%;
-    min-width: 550px; }
+    min-width: 550px;
+    margin-bottom: 20px; }
     .work .projects .galleryUl .modal h2, .work .projects .galleryUl .modal p {
       text-align: center; }
     .work .projects .galleryUl .modal h2 {
       font-size: 2rem; }
     .work .projects .galleryUl .modal p {
       margin-bottom: 0; }
-    .work .projects .galleryUl .modal div .singleProject {
-      max-width: 100%;
-      min-width: 550px; }
+    .work .projects .galleryUl .modal div {
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .work .projects .galleryUl .modal div .singleProject {
+        max-width: 100%; }
 
 .tech .techStack {
   width: 80%;

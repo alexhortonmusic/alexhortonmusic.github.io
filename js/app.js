@@ -90,9 +90,9 @@ const projectModalArr = []
 projectsArr.forEach((project, index) => {
   const clickableHTML = `
     <li class='modal'>
-      <h2 id='${project.className}'>${project.name}</h2>
+      <h2>${project.name}</h2>
       <p>${project.desc}</p>
-      <div>
+      <div class='${project.className}'>
         <img class='singleProject' src="${project.mainImg}" alt="${project.name} screenshot">
       </div>
     </li>
@@ -120,5 +120,5 @@ projectHTMLArr.forEach((projectHTML) => {
 
 // build modals
 projectModalArr.forEach(({ name, modal }) => {
-  $(`#${name}`).featherlight(modal)
+  $(`.${name}`).featherlight(modal)
 })

@@ -1,4 +1,5 @@
 .work {
+
 	.projects {
 
 		.galleryUl {
@@ -11,6 +12,7 @@
 			.modal {
 				width: 40%;
 				min-width: 550px;
+				margin-bottom: 20px;
 
 				h2, p {
 					text-align: center;
@@ -25,10 +27,13 @@
 				}
 
 				div {
+					height: 80%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
 
 					.singleProject {
 						max-width: 100%;
-						min-width: 550px;
 					}
 				}
 			}
