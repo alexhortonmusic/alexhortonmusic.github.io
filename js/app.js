@@ -53,7 +53,7 @@ const Tradesies = {
   info: 'A gear-trading application for the restless musician. Built with AngularJS and a Firebase back-end.',
   img1: '../img/tradesies-home.png',
   img2: '../img/tradesies-community.png',
-  url: '#',
+  url: '',
   github: 'https://github.com/alexhortonmusic/tradesies/tree/master/wholeDangThing',
   desc: 'A music gear trading web application'
 }
@@ -62,7 +62,7 @@ const SpaceRace = {
   name: 'Space Race',
   className: 'spaceRace',
   mainImg: '../img/space-mock.png',
-  info: 'Space Race is a live-action multiplayer game, supporting multiple users and rooms. Built using technologies such as Node.js, Express, Socket.io, and Pug, Space Race is a game where 2-4 players race their ships to the moon.',
+  info: 'Space Race is a live-action multiplayer game, supporting multiple users and rooms. Built using technologies such as Node.js, Express, Socket.io, and Pug, Space Race is a game where 2-4 players race their ships to the moon. A quickly designed project built by a team of 5.',
   img1: '../img/space-game.png',
   img2: '../img/space-home.png',
   url: 'https://space-race-.herokuapp.com/',
@@ -97,12 +97,17 @@ projectsArr.forEach((project, index) => {
       </div>
     </li>
   `
-  const modalHTML = `
+  let modalHTML = `
     <div id='${project.className}' class='modalPop'>
       <h2>${project.name}</h2>
       <p>${project.info}</p>
       <div class='links'>
-        <a href='${project.url}'>Try it out!</a>
+  `
+  if (project.url !== '') {
+    modalHTML += `<a href='${project.url}'>Try it out!</a>`
+  }
+
+  modalHTML += `
         <a href='${project.github}'>Check out the code</a>
       </div>
       <img src="${project.img1}" alt="${project.name} Home Page"/>
