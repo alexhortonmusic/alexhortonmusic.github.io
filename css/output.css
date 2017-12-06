@@ -27,13 +27,10 @@ body {
       margin-top: 20px;
       font-weight: 200;
       font-size: 1.2rem; }
-      .landing nav .navList li a {
-        text-decoration: none;
-        color: white; }
-  .landing nav li:nth-child(2) {
-    font-family: "Cabin Sketch", cursive;
-    font-size: 3rem;
-    margin-top: 0; }
+    .landing nav .navList li:nth-child(2) {
+      font-family: "Cabin Sketch", cursive;
+      font-size: 3rem;
+      margin-top: 0; }
   .landing div {
     height: 90%;
     width: 70%;
@@ -58,7 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 700px; }
+  min-height: 100vh; }
   .about .aboutBox {
     width: 60%;
     margin: 0 auto;

@@ -127,3 +127,12 @@ projectHTMLArr.forEach((projectHTML) => {
 projectModalArr.forEach(({ name, modal }) => {
   $(`.${name}`).featherlight(modal)
 })
+
+// --- links in header slide to corresponding #ID ---- //
+$("#aboutLink").click(function() {
+  $('html, body').animate({ scrollTop: $('#about').offset().top }, 1000)
+})
+
+$("#workLink").click(function() {
+  $('html, body').animate({ scrollTop: $('#work').offset().top }, 1000)
+})
