@@ -1,126 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="./img/a-logo-alpha.png">
-    <title>Alex Horton | Developer</title>
-    <script src="https://use.fontawesome.com/022879ddbb.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Gravitas+One|Patua+One|Raleway:300,400,700" rel="stylesheet">
-    <link href="/lib/featherlight/release/featherlight.min.css" rel="stylesheet" />
-    <link type="text/css" rel="stylesheet" href="/css/grid.css">
-    <link rel="stylesheet" href="/css/output.css">
-  </head>
-  <body>
-    <div class="main">
-      <!-- nav -->
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/img/elephant-fav.png">
+  <title>Alex Horton | Developer</title>
+  <script src="https://use.fontawesome.com/022879ddbb.js"></script>
+  <link href="/lib/featherlight/release/featherlight.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Raleway:200,300,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <section class='landing'>
+    <nav>
+      <ul class='navList'>
+        <li id="aboutLink">About</li>
+        <li>alex horton</li>
+        <li id="workLink">Work</li>
+      </ul>
+    </nav>
+    <div>
+      <p>I'm a developer who's passionate about making stuff.</p>
+      <p><a href="/img/jorts.jpg">And jorts.</a></p>
+    </div>
+  </section>
 
-
-      <!-- splash -->
-      <div class="heroTextBox section">
-        <nav>
-          <div>
-            <a href='#work'><p>Work</p></a>
-            <a href='#about'><p>About</p></a>
-          </div>
-        </nav>
-
-        <div class='heroTextWrap'>
-          <h3 class="tagline">I'm Alex Horton, a developer.</h3>
-          <h3 class="tagline tag2">Just over here making stuff.</h3>
-          <div class="headShotBox">
-            <img src="../img/alexHead.jpg" alt="Alex Horton Headshot" />
-          </div>
-
-          <a href="mailto:alexhortondev@gmail.com?subject=Let's chat" class="talkAboutIt">Let's talk about it &nbsp;<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></a>
-        </div>
+  <section class='about' id='about'>
+    <div class='aboutBox'>
+      <div class='aboutImg'>
+        <img src="/img/headshot.png" alt="Side profile of Alex Horton">
       </div>
-
-      <!-- about -->
-      <div class='section group about' id='about'>
-        <div class='whoIAm'>
-          <h1>Who I Am</h1>
-          <div class='aboutMe'>
-            <div class='aboutImg'>
-              <img src="./img/alex-bass.jpg" alt="Alex Horton casual">
-            </div>
-            <p class="tagInfo">
-              <span>I come from another life...</span> of playing music, where creation was my favorite flavor. Now, I'm a developer, with an interest in aesthetic and 'the hand' for digging to the bottom of problems. Whether I'm building an application, refinishing my outdoor furniture, or writing a song, I'm all about taking something and trying to make it better.
-            </p>
-          </div>
-        </div>
-
-        <div class='whatIDo'>
-          <h1>What I Do</h1>
-          <div class='aboutCols'>
-            <div class='aboutCol'>
-              <h3>Leadership</h3>
-              <p>Leading my peers is something that has always come naturally to me. I've led hundreds of music rehearsals with numerous bands and musical projects, organized a number of group trips, and was recently voted by my class to be in charge of the NSS Cohort 14 class site. When leading, my abilities allow me to encourage my collaborators, as well as allow me to understand what is expected of a good teammate when I'm not.</p>
-            </div>
-            <div class='aboutCol'>
-              <h3>Innovation</h3>
-              <p>I've always been driven by the potential of ideas. I thrive when I'm encouraged to keep pulling the thread of an idea until the entire unraveled skein is laid out in front of me, allowing me to fully realize what that idea could truly become. I'm constantly on the search for the next idea, and nothing delights me more than that search.</p>
-            </div>
-            <div class='aboutCol'>
-              <h3>Ping Pong</h3>
-              <p id='pingPong'>🏓</p>
-            </div>
-          </div>
-        </div>
-      </div> <!-- about -->
-
-      <div class='workHarder'></div>
-
-      <!-- projects -->
-      <div class="section group projects gallery" id='work'>
-        <h1>Work</h1>
-        <div class="rows">
-      		<ul class='galleryUl'>
-            <!-- projects print here -->
-      		</ul>
-      	</div> <!-- rows -->
+      <div class='aboutText'>
+        <p>What matters to me</p>
+        <ul>
+          <li>Clean and simple aesthetics</li>
+          <li>Well-designed solutions to problems</li>
+          <li>Being a good teammate</li>
+          <li>Growth</li>
+          <li>My wife and dogs</li>
+          <li>Bourbon</li>
+          <!-- think of some more stuff -->
+        </ul>
       </div>
+    </div>
+  </section>
 
-      <!-- tech and quote section -->
-      <div class='lastSection section'>
-        <!-- tech stack -->
-        <div class='techAndQuote'>
-          <div class='group tech'>
-            <h1>Tech Stack</h1>
-            <div class='techBox'>
-              <div class='row'>
-              </div>
-            </div>
-          </div>
+  <section class='work' id='work'>
+    <div class='projects'>
+      <p>Work</p>
+      <ul class='galleryUl'></ul>
+    </div>
+  </section>
 
-          <div class='sondheim'>
-            <div class="quote">
-              <h1>&nbsp; &nbsp; &nbsp;Look I made a hat, where there never was a hat.</h1>
-              <p>- Stephen Sondheim</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- <section class='tech'>
+    <div>
+      <p>Some tech I like</p>
+    </div>
+    <div class='techStack'></div>
+  </section> -->
 
-      <footer>
-        <div class='icons'>
-          <a href="https://github.com/alexhortonmusic">
-            <i class="fa fa-github-square footerIcon gh" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/alexhortondev">
-            <i class="fa fa-linkedin-square footerIcon linked" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:alexhortondev@gmail.com?subject=Let's chat">
-            <i class="fa fa-envelope-o footerIcon email" aria-hidden="true"></i>
-          </a>
-        </div>
-        <p><i class="fa fa-copyright" aria-hidden="true"></i>2016 Alex Horton</p>
-      </footer>
+  <section class='contact'>
+    <div class='contactIcons'>
+      <a href="https://github.com/alexhortonmusic"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+      <a href="mailto:alexhortondev@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/alexhortondev/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+    </div>
+  </section>
 
-    </div> <!--main-->
-    <script src='/lib/jquery/dist/jquery.min.js'></script>
-    <script src='/lib/featherlight/release/featherlight.min.js'></script>
-    <script src='/js/app.js'></script>
-  </body>
+  <script src='/lib/jquery/dist/jquery.min.js'></script>
+  <script src='/lib/featherlight/release/featherlight.min.js'></script>
+  <script src='/js/app.js'></script>
+</body>
 </html>
