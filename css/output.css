@@ -27,6 +27,8 @@ body {
       margin-top: 20px;
       font-weight: 200;
       font-size: 1.2rem; }
+    .landing nav .navList li:not(.title):hover {
+      cursor: pointer; }
     .landing nav .navList li:nth-child(2) {
       font-family: "Cabin Sketch", cursive;
       font-size: 3rem;
