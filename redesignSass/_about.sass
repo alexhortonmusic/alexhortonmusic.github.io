@@ -16,6 +16,7 @@
 		.aboutImg
 			margin-top: 40px
 			width: 40%
+			min-width: 180px
 
 			img
 				width: 100%
@@ -29,6 +30,11 @@
 			p
 				font-size: 3rem
 
+			@media screen and (max-width: 600px)
+				p
+					font-size: 2.2rem
+					text-align: center
+
 			ul
 				list-style: none
 				padding-left: 60px
@@ -36,3 +42,16 @@
 				li
 					margin-bottom: 15px
 					font-size: 1.5rem
+
+				@media screen and (max-width: 475px)
+					li
+						font-size: 1.3rem
+
+			@media screen and (max-width: 750px)
+				ul
+					padding-left: 0 
+
+
+	@media screen and (max-width: 800px)
+		.aboutBox
+			width: 85%

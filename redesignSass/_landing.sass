@@ -30,6 +30,14 @@
 				font-size: 3rem
 				margin-top: 0
 
+		@media screen and (max-width: 800px)
+			.navList
+				width: 85%
+
+				li:nth-child(2)
+					font-size: 2rem
+					margin-top: 10px
+
 
 
 	/* passionate about... */
@@ -51,8 +59,20 @@
 			a
 				text-decoration: none
 				color: white
+				transition: 0.2s
 
+			a:hover,
+			a:active
+				color: $blue
+				transition: 0.2s
 
 
 		p:nth-child(2)
 			margin-top: 30px
+
+
+	@media screen and (max-width: 550px)
+		div
+			width: 85%
+			p
+				font-size: 3rem
