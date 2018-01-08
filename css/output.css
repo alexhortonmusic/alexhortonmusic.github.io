@@ -33,6 +33,12 @@ body {
       font-family: "Cabin Sketch", cursive;
       font-size: 3rem;
       margin-top: 0; }
+  @media screen and (max-width: 800px) {
+    .landing nav .navList {
+      width: 85%; }
+      .landing nav .navList li:nth-child(2) {
+        font-size: 2rem;
+        margin-top: 10px; } }
   .landing div {
     height: 90%;
     width: 70%;
@@ -48,9 +54,19 @@ body {
       text-align: center; }
       .landing div p a {
         text-decoration: none;
-        color: white; }
+        color: white;
+        transition: 0.2s; }
+      .landing div p a:hover,
+      .landing div p a:active {
+        color: #1B1B3A;
+        transition: 0.2s; }
     .landing div p:nth-child(2) {
       margin-top: 30px; }
+  @media screen and (max-width: 550px) {
+    .landing div {
+      width: 85%; }
+      .landing div p {
+        font-size: 3rem; } }
 
 .about {
   background-color: #F7F8F9;
@@ -67,33 +83,52 @@ body {
     justify-content: space-around; }
     .about .aboutBox .aboutImg {
       margin-top: 40px;
-      width: 40%; }
+      width: 40%;
+      min-width: 180px; }
       .about .aboutBox .aboutImg img {
         width: 100%; }
     .about .aboutBox .aboutText p {
       font-size: 3rem; }
+    @media screen and (max-width: 600px) {
+      .about .aboutBox .aboutText p {
+        font-size: 2.2rem;
+        text-align: center; } }
     .about .aboutBox .aboutText ul {
       list-style: none;
       padding-left: 60px; }
       .about .aboutBox .aboutText ul li {
         margin-bottom: 15px;
         font-size: 1.5rem; }
+      @media screen and (max-width: 475px) {
+        .about .aboutBox .aboutText ul li {
+          font-size: 1.3rem; } }
+    @media screen and (max-width: 750px) {
+      .about .aboutBox .aboutText ul {
+        padding-left: 0; } }
+  @media screen and (max-width: 800px) {
+    .about .aboutBox {
+      width: 85%; } }
 
 .work {
-  background-color: #F7F8F9; }
+  background-color: #F7F8F9;
+  margin-bottom: 100px; }
   .work p {
     text-align: center;
     font-size: 4rem; }
+  @media screen and (max-width: 750px) {
+    .work p {
+      margin-bottom: 30px; } }
   .work .projects .galleryUl {
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 0; }
+    margin-top: 0;
+    padding-left: 0; }
     .work .projects .galleryUl .modal {
       width: 40%;
-      min-width: 550px;
+      min-width: 375px;
       margin: 0 50px 20px; }
       .work .projects .galleryUl .modal h2, .work .projects .galleryUl .modal p {
         text-align: center; }
@@ -111,6 +146,47 @@ body {
           max-width: 100%;
           cursor: pointer; }
 
+.featherlight-content {
+  max-height: 600px;
+  max-width: 600px;
+  background-color: #F7F8F9; }
+
+.modalPop h2 {
+  text-align: center; }
+.modalPop p {
+  width: 80%;
+  margin: 5px auto;
+  text-align: center; }
+.modalPop .links a {
+  display: inline-block;
+  width: 49%;
+  margin: 10px auto 0;
+  color: #1B1B3A;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none; }
+.modalPop .links a:hover {
+  color: #EDD4B2;
+  transition: 0.2s; }
+.modalPop img {
+  display: block;
+  margin: 15px 20px 15px 40px;
+  width: 500px;
+  border: 1px solid #393E41; }
+
+@media (max-width: 600px) {
+  .gallery .galleryUl .modal h2 {
+    font-size: 1.8rem; }
+  .gallery .galleryUl .modal div {
+    width: 70%;
+    margin: 0 auto; }
+
+  .featherlight-content {
+    max-height: 400px;
+    width: 90%; }
+
+  .modalPop img {
+    width: 300px; } }
 .tech {
   background-color: #F7F8F9;
   margin-top: 100px; }
